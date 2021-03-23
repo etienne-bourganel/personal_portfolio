@@ -28,27 +28,31 @@ h2 {
     width: 100%;
 }
 
-.navbar ul, .contact ul {
+.navbar ul,
+.contact ul {
     list-style: none;
 }
 
-.navbar li, .contact li {
+.navbar li,
+.contact li {
     display: inline-block;
     margin-left: 1em;
 }
 
-.navbar li a{
+.navbar li a {
     text-transform: uppercase;
 }
 
-.navbar li a, .contact li a{
+.navbar li a,
+.contact li a {
     border-left: 2px solid #fff;
     color: #fff;
     padding-left: 1em;
     text-decoration: none;
 }
 
-.navbar li a:hover, .contact li a:hover {
+.navbar li a:hover,
+.contact li a:hover {
     color: #1fd4ad;
 }
 
@@ -115,25 +119,58 @@ h2 {
 }
 
 .project-tile {
-    background-color: rgba(191, 202, 28, 0.623);
-    border: 2px solid #fff;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: 160px;
-    margin: 2em 2em;
+    margin: 5em 2em;
     text-align: center;
     width: 280px;
 }
 
-.project-tile h3 {
+.project-title-box {
+    background-color: #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 2em;
+    padding: 1px;
     text-align: center;
+    vertical-align: middle;
+}
+
+.project-title {
+    color: rgb(241, 218, 10);
+    font-family: monospace;
+    font-size: 1em;
+    margin-top: 6px;
 }
 
 .project-img {
-    border: 2px solid #0c1f1b;
+    border: 3px solid #0c1f1b;
     height: 160px;
     width: 260px;
 }
 
 .project-img:hover {
-    border: 2px solid #1fd4ad;
+    border: 3px solid #1fd4ad;
+}
+
+.project-tile a {
+    display: block;
+    margin-top: 1em;
+}
+
+.project-link-github {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.project-link-github:hover {
+    color: #1fd4ad;
+}
+
+.icon {
+    height: 1.5em;
+    margin-bottom: -0.3em;
 }
