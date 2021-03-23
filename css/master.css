@@ -115,14 +115,25 @@ h2 {
 }
 
 .project-tile {
-    background-color: #777;
+    background-color: rgba(191, 202, 28, 0.623);
     border: 2px solid #fff;
     box-sizing: border-box;
     height: 160px;
-    margin: 1em;
+    margin: 2em 2em;
+    text-align: center;
     width: 280px;
 }
 
 .project-tile h3 {
     text-align: center;
+}
+
+.project-img {
+    border: 2px solid #0c1f1b;
+    height: 160px;
+    width: 260px;
+}
+
+.project-img:hover {
+    border: 2px solid #1fd4ad;
 }
