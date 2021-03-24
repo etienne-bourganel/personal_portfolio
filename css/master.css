@@ -17,8 +17,8 @@ h2 {
 .navbar,
 .footer {
     /* background-color: #333; */
-    background: rgb(30, 29, 31);
-    background: linear-gradient(90deg, rgba(30, 29, 31, 1) 0%, rgba(89, 49, 121, 1) 50%, rgba(18, 115, 94, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 0%, rgba(1, 88, 70, 1) 100%);
     font-size: 1.2em;
     height: 2.2em;
     padding-top: 1em;
@@ -85,6 +85,7 @@ h2 {
 .contact {
     bottom: 0;
     margin: 0 auto;
+    text-align: center;
     width: fit-content;
 }
 
@@ -102,12 +103,24 @@ h2 {
 .welcome-text-box {
     height: fit-content;
     margin: 45vh auto;
+    text-align: center;
     width: fit-content;
 }
 
+.welcome:after {
+    border: 10px solid ;
+    border-color: #000 transparent transparent transparent;
+    bottom: 2vh;
+    color: #000;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 0;
+}
+
 /* PROJECTS STYLES */
-
-
 
 .projects-box {
     display: flex;
@@ -182,8 +195,8 @@ h2 {
 
 /* MEDIA QUERIES */
 
-/* @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
+@media only screen and (min-width: 1550px) {
+    .projects-box {
+        max-width: 100%;
     }
-} */
+}
